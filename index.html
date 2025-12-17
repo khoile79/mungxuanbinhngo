@@ -352,9 +352,41 @@
         }
       .video-wrapper {
     position: relative;
-   <audio controls>
-        <source src="divenha.mp3" type="audio/mpeg">
-    </audio>
+    /* Tỷ lệ 9:16 tính bằng công thức: (16 / 9) * 100 = 177.78% */
+    padding-bottom: 46.78%; 
+    height: 0;
+    overflow: hidden;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    
+    /* Thêm 2 dòng này để video không bị quá to trên màn hình máy tính */
+    max-width: 350px; 
+    margin: 0 auto; 
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+        @media (max-width: 768px) { .card-grid { flex-direction: column; } }
+    </style>
+    </div>
+
+    </style>
+</head>
+<body>
+    <div class="firework-bg"></div>
+    <div id="flower-container"></div>
+    <div class="header">
+        <h1>Chúc Mừng Năm Mới</h1>
+        <div class="year">BÍNH NGỌ 2026</div>
+         <audio controls>
+  <source src="divenha.mp3">
+</audio>
+    </div>
+            </p>
     <div class="main-content">
         <div class="cau-doi">MÃ ĐÁO THÀNH CÔNG</div>
         
@@ -405,7 +437,11 @@
     </script>
      <div class="intro">
     Tết Nguyên Đán là lễ hội truyền thống lớn nhất trong năm của người Việt. Đó là điểm giao thời giữa năm cũ và năm mới, nó thể hiện sự gắn kết trong cộng đồng, gia tộc và gia đình. Đó là giá trị tâm linh, cũng là giá trị tình cảm sâu sắc của người Việt.
-    Tết Nguyên Đán là lễ hội truyền thống lớn nhất trong năm của người Việt. Tết đến xuân về không chỉ là niềm khao khát của biết bao đứa trẻ để được xúng xính quần áo mới, được ăn bánh mứt và nhất là được nhận lì xì mà nó còn mang một ý nghĩa vô cùng sâu sắc. Đó là điểm giao thời giữa năm cũ và năm mới, giữa một chu kỳ vận hành của đất trời, vạn vật cỏ cây; còn thể hiện sự gắn kết trong cộng đồng, gia tộc và gia đình. Tết Nguyên đán còn là dịp để hướng về cội nguồn.
+    Tết Nguyên Đán là lễ hội truyền thống lớn nhất trong năm của người Việt. Tết đến xuân về không chỉ là niềm khao khát của biết bao đứa trẻ để được xúng xính quần áo mới, được ăn bánh mứt và nhất là được nhận lì xì mà nó còn mang một ý nghĩa vô cùng sâu sắc. Đó là điểm giao thời giữa năm cũ và năm mới, giữa một chu kỳ vận hành của đất trời, vạn vật cỏ cây; còn thể hiện sự gắn kết trong cộng đồng, gia tộc và gia đình. Tết Nguyên đán còn là dịp để hướng về cội nguồn. <br>
+         Mỗi khi Tết đến xuân về, trong lòng mỗi người Việt lại dâng lên những cảm xúc thân quen về gia đình, quê hương và những giá trị truyền thống bền vững theo năm tháng. Website này được xây dựng với mong muốn tái hiện một cách chân thực và sinh động không gian Tết cổ truyền Việt Nam – nơi hội tụ những phong tục đẹp, những nét văn hóa đặc sắc và tình cảm sum vầy thiêng liêng. Thông qua từng nội dung được chọn lọc và trình bày cẩn thận như phong tục ngày Tết, ẩm thực đặc trưng ba miền, hoa xuân, mâm ngũ quả, những điều kiêng kị cũng như các hoạt động đón xuân ý nghĩa, website hy vọng mang đến cho người xem cái nhìn toàn diện về vẻ đẹp truyền thống của dân tộc trong thời khắc chuyển giao năm mới.
+
+Không chỉ dừng lại ở việc cung cấp thông tin, website còn là hành trình gợi nhớ và gìn giữ những ký ức Tết thân thương – nơi con người tìm về cội nguồn, trân trọng ông bà, cha mẹ và gắn kết yêu thương qua những khoảnh khắc sum vầy. Đây là sản phẩm học tập được thực hiện bởi nhóm 5 thành viên: Chúc My, Hoàng Hiệu, Hoàng Khôi, Trọng Ân và Phương Quyết, với tất cả sự tâm huyết, sáng tạo và lòng trân trọng dành cho những giá trị văn hóa truyền thống. Chúng tôi mong rằng website không chỉ giúp người xem hiểu hơn về Tết Việt Nam, mà còn khơi dậy niềm tự hào dân tộc, ý thức gìn giữ bản sắc và lan tỏa tinh thần đoàn viên, yêu thương trong cuộc sống hiện đại.
+         
         </div>
 
 
@@ -611,12 +647,8 @@
             </div>
 
         </div>
-      <audio controls>
-        <source src="nqdlg.mp3" type="audio/mpeg">
-    </audio>
-
-     <div class="intro">
-         Tết cổ truyền không chỉ đánh dấu sự khép lại của một năm cũ mà còn mở ra hành trình mới đầy hy vọng, nơi mỗi người được trở về với gia đình, với cội nguồn yêu thương sâu thẳm. Trong hương trầm ấm áp, trong mâm cơm sum vầy và những lời chúc chân thành đầu năm, Tết gợi nhắc ta về giá trị của sự đoàn tụ, của lòng hiếu kính và tình người bền chặt. Dẫu thời gian có trôi, nhịp sống có đổi thay, Tết vẫn luôn là điểm tựa tinh thần thiêng liêng, nuôi dưỡng ký ức tuổi thơ và kết nối các thế hệ. Hy vọng rằng website này không chỉ mang đến cho bạn những thông tin về Tết Việt Nam, mà còn khơi dậy cảm xúc yêu thương, để mỗi chúng ta thêm trân trọng hiện tại, gìn giữ truyền thống và nâng niu những khoảnh khắc sum vầy quý giá trong những ngày đầu xuân năm mới.
-     </div>
+        <audio controls>
+  <source src="nqdlg.mp3">
+</audio>
 </body>
 </html>
